@@ -11,6 +11,12 @@
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="cssReset.css" />
     <link rel="stylesheet" href="blogPreviewCard.css" />
@@ -18,9 +24,9 @@
     <title>Frontend Mentor | Blog preview card</title>
   </head>
   <body>
-    <div class="flex-container">
+    <div class="preview-card__container">
       <div class="preview-card center">
-        <div class="card-content">
+        <div class="card-content flex-container__column">
           <div class="image-container">
             <img
               alt="An abstract picture of black and yellow shapes."
@@ -28,14 +34,22 @@
             />
           </div>
           <div class="topics-container">
-            <div class="topic">Learning</div>
+            <div class="topic">
+              <p class="font-heavy">Learning</p>
+            </div>
           </div>
-          <div class="publication-date">Published 21 Dec 2023</div>
-          <div class="text-content">
-            <div class="heading">HTML & CSS foundations</div>
+          <div class="publication-date">
+            <p class="font-heavy">Published 21 Dec 2023</p>
+          </div>
+          <div class="text-content flex-container__column">
+            <div class="heading">
+              <h3 class="font-heavy">HTML & CSS foundations</h3>
+            </div>
             <div class="summary">
-              These languages are the backbone of every website, defining
-              structure, content, and presentation.
+              <p class="font-normal">
+                These languages are the backbone of every website, defining
+                structure, content, and presentation.
+              </p>
             </div>
           </div>
           <footer>
@@ -45,7 +59,7 @@
                 src="/assets/images/image-avatar.webp"
               />
             </div>
-            <div class="author">Greg Hooper</div>
+            <div class="author"><p class="font-heavy">Greg Hooper</p></div>
           </footer>
         </div>
       </div>
